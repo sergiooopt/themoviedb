@@ -30,6 +30,3 @@ flutter build apk --split-per-abi
 ~~~
 
 > Con el comando anterior se deberían haber generado apks para x86 y arm en la ruta `build/app/outputs/apk/release/`
-
-
-
