@@ -1,9 +1,16 @@
-# Archivos apk
+# Apks
 *.apk
 *.aab
 
 # Claves
 key.properties
 
-# Extras no importantes del proyecto
+# Builds
 build/
+.gradle/
+.cxx/
+
+# Flutter
+**/flutter_export_environment.sh
+**/.dart_tool/
+**/pubspec.lock
