@@ -1,1 +1,9 @@
+# Archivos apk
+*.apk
+*.aab
+
+# Claves
 key.properties
+
+# Extras no importantes del proyecto
+build/
