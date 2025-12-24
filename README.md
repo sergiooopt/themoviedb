@@ -18,11 +18,11 @@ keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA \
 Crea tu archivo key.properties dentro de `android/`
 ~~~Bash
 nano android/key.properties
-~~~
 > storePassword=(contraseña keytool)
 > keyPassword=(contraseña keytool)
 > keyAlias=upload
 > storeFile=(ubicación de clave generada)
+~~~
 
 Exporta las apks con:
 ~~~Bash
@@ -30,4 +30,5 @@ flutter build apk --split-per-abi
 ~~~
 
 > Con el comando anterior se deberían haber generado apks para x86 y arm en la ruta `build/app/outputs/apk/release/`
+
 
