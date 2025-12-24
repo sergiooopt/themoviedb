@@ -1,16 +1,34 @@
-# themoviedb
+## TheMovieDB
 
-A new Flutter project.
+> Aplicación en Dart (Flutter) para consultar peliculas, tiene acceso a la api de [TheMovieDB](www.themoviedb.org).
 
-## Getting Started
+### Obtener apk de la aplicación (Linux)
+Clona el repositorio:
+~~~Bash
+git clone https://github.com/sergiooopt/themoviedb.git
+cd themoviedb
+~~~
 
-This project is a starting point for a Flutter application.
+Ejecuta:
+~~~Bash
+keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA \
+        -keysize 2048 -validity 10000 -alias upload
+~~~
 
-A few resources to get you started if this is your first Flutter project:
+Crea tu archivo key.properties dentro de `android/`
+~~~Bash
+nano android/key.properties
+~~~
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+> storePassword=<password-from-previous-step>
+> keyPassword=<password-from-previous-step>
+> keyAlias=upload
+> storeFile=<keystore-file-location>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Exporta las apks con:
+~~~Bash
+flutter build apk --split-per-abi
+~~~
+
+> Con el comando anterior se deberían haber generado apks para x86 y arm en la ruta `build/app/outputs/apk/release/`
+
