@@ -25,18 +25,18 @@ nano android/key.properties
 ~~~
 
 Contiene la siguiente información:
+
 > storePassword=<contraseña keytool>
+
 > keyPassword=<contraseña keytool>
+
 > keyAlias=upload
+
 > storeFile=<ubicación de clave generada>
 
-Exporta las apks con:
+Exporta las apks con
 ~~~Bash
 flutter build apk --split-per-abi
 ~~~
 
 > Con el comando anterior se deberían haber generado las apks en la ruta `build/app/outputs/apk/release/`
-
-
-
-
