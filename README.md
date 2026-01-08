@@ -24,15 +24,15 @@ Crea tu archivo key.properties
 nano android/key.properties
 ~~~
 
-Contiene la siguiente información:
+> Contiene la siguiente información:
 
-storePassword=<contraseña keytool>
+>>storePassword=<contraseña keytool>
 
-keyPassword=<contraseña keytool>
+>> keyPassword=<contraseña keytool>
 
-keyAlias=upload
+>> keyAlias=upload
 
-storeFile=<ubicación de clave generada>
+>> storeFile=<ubicación de clave generada>
 
 > Exporta las apks con
 ~~~Bash
@@ -40,6 +40,7 @@ flutter build apk --split-per-abi
 ~~~
 
 > Con el comando anterior se deberían haber generado las apks en la ruta `build/app/outputs/apk/release/`
+
 
 
 
