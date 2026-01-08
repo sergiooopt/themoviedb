@@ -1,6 +1,8 @@
 ## TheMovieDB
 > Aplicación en Dart (Flutter) para consultar peliculas, tiene acceso a la api de [TheMovieDB](https://www.themoviedb.org/?language=es-ES).
 
+![Imagen de la página web](https://imgs.search.brave.com/fB9NtYkhv0ws5e0CM103TJAllrUGFLxHFcySdXIbhuw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zaXRl/LWltYWdlcy5zaW1p/bGFyY2RuLmNvbS9p/bWFnZT91cmw9dGhl/bW92aWVkYi5vcmcm/dD0xJnM9MSZoPTcz/MDZiODdkNTBlZDRl/MjE2YzA5YjhjYmY4/YTFkOGQxNDM5N2E5/MjYxMjIyYTE1ZmI3/Mjk3ZDBiODMwYjE5/NWU)
+
 ### Obtener apk de la aplicación (Linux)
 Clona el repositorio
 ~~~Bash
