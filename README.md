@@ -34,12 +34,13 @@ nano android/key.properties
 
 >> storeFile=<ubicación de clave generada>
 
-> Exporta las apks con
+Exporta las apks con
 ~~~Bash
 flutter build apk --split-per-abi
 ~~~
 
 > Con el comando anterior se deberían haber generado las apks en la ruta `build/app/outputs/apk/release/`
+
 
 
 
